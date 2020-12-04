@@ -2,6 +2,7 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
+const webpack = require("webpack")
 const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
@@ -67,6 +68,15 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    // 使用 cornerstone-core & dicom-parser & cornerstoneWADOLoader
+    new webpack.ProvidePlugin({
+        cornerstone: "cornerstone-core",
+        "window.cornerstone": "cornerstone-core",
+        cornerstoneWADOImageLoader: "cornerstoneWADOImageLoader",
+        "window.cornerstoneWADOImageLoader": "cornerstoneWADOImageLoader"
+    }),
+],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).

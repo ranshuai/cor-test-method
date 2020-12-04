@@ -1,0 +1,69 @@
+const Wlpreset = [{
+    ac: true,
+    "id": "0",
+    "text": "默认",
+    "name": "",
+    "selsected": false,
+    "modality": true
+}, {
+    ac: false,
+    "id": "1",
+    "text": "头部平扫",
+    "name": "headWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    ac: false,
+    "id": "2",
+    "text": "头颅骨窗",
+    "name": "cranialBoneWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    ac: false,
+    "id": "3",
+    "text": "颈椎",
+    "name": "cervicalVertebra",
+    "selsected": false,
+    "modality": true
+}, {
+    "id": "4",
+    "text": "肺窗",
+    "name": "lungWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    "id": "5",
+    "text": "纵膈窗",
+    "name": "mediastinalWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    "id": "6",
+    "text": "腹部",
+    "name": "abdominalWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    "id": "7",
+    "text": "肝脏",
+    "name": "hepaticWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    "id": "8",
+    "text": "关节骨窗",
+    "name": "articularWindow",
+    "selsected": false,
+    "modality": true
+}, {
+    "id": "9",
+    "text": "血管",
+    "name": "vascularWindow",
+    "selsected": false,
+    "modality": true
+}
+
+];
+
+export default Wlpreset

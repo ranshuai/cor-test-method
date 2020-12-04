@@ -1,0 +1,58 @@
+.btns_wrapper {
+    margin: 0.2rem 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    > * {
+      padding: 0.2rem 0.6rem;
+      // border: 1px solid green;
+    }
+  }
+
+  @function pxToRem($n) {
+    @return $n * 0.01 + rem;
+  }
+// 内边距
+  @mixin box_sizing(){
+    box-sizing: border-box;
+  }
+  .p_l_r_24{
+    @include box_sizing();
+    padding:  0 .24rem;
+  }
+  .p_l_r_8{
+    @include box_sizing();
+    padding:  0 .08rem;
+  }
+  .p_8{
+    @include box_sizing();
+    padding: .08rem;
+  }
+  .p_10{
+    @include box_sizing();
+    padding: .1rem;
+  }
+  .p_t_80{
+    @include box_sizing();
+   padding-top:.8rem; 
+  }
+  .p_t_82{
+    @include box_sizing();
+   padding-top:.82rem; 
+  }
+  .p_l_92{
+    padding-left:.92rem; 
+  }
+  .p_20_32{
+    @include box_sizing();
+    padding: .2rem .32rem;
+  }
+  .p_t_23{
+    @include box_sizing();
+    padding-top:.23rem 
+  }
+  .p_t_16{
+    @include box_sizing();
+    padding-top:.16rem 
+  }
+
